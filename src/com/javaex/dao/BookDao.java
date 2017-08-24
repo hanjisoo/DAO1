@@ -7,15 +7,15 @@ import java.sql.SQLException;
 
 import com.javaex.vo.BookVo;
 
-
 public class BookDao {
-	public int insert(BookVo bookVo) {//클래스불르고 별명지음
-		int count=-1;//insert실패하면 -1줘
-		
-		String title =bookVo.getTitle();
-		String pubs=bookVo.getPubs();
-		String date=bookVo.getDate();
-		int authorId=bookVo.getAuthorId();
+
+	public int insert(BookVo bookVo) {// 클래스불르고 별명지음
+		int count = -1;// insert실패하면 -1줘
+
+		String title = bookVo.getTitle();
+		String pubs = bookVo.getPubs();
+		String date = bookVo.getDate();
+		int authorId = bookVo.getAuthorId();
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
